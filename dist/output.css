@@ -766,6 +766,76 @@ video {
   transition-duration: 150ms;
 }
 
+/* ---------------BANNER--------------- */
+
+.banner {
+  height: 45rem;
+  --tw-bg-opacity: 1;
+  background-color: hsl(235.14 82.78% 59.02% / var(--tw-bg-opacity));
+  background-image: url(../dist/img/bg.svg);
+  background-size: contain;
+  background-position: -5rem bottom;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 1024px) {
+  .banner {
+    background-image: url(../dist/img/bg.svg),url(../dist/img/bg2.svg),url(../dist/img/bg2.svg);
+  }
+}
+
+.banner__text {
+  margin-bottom: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.banner__text h1 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.banner__text p {
+  font-size: 1.2rem;
+}
+
+.banner__actions {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+}
+
+.banner__actions a {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 9999px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  font-size: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.banner__actions a i {
+  margin-right: 0.5rem;
+}
+
+.banner__actions a:first-child {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.banner__actions a:last-child {
+  --tw-bg-opacity: 1;
+  background-color: hsl(214.29 7.37% 18.63% / var(--tw-bg-opacity));
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;

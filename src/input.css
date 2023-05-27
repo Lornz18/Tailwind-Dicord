@@ -80,4 +80,34 @@
     .header__nav__dim span{
         @apply block bg-black w-[60vh] h-[100vh] bg-opacity-20 transition-all;
     }
+
+
+    /* ---------------BANNER--------------- */
+    .banner{
+        @apply bg-primary bg-[url(../dist/img/bg.svg)] bg-contain bg-no-repeat bg-[-5rem_bottom] h-[45rem] lg:bg-[url(../dist/img/bg.svg),url(../dist/img/bg2.svg),url(../dist/img/bg2.svg)];
+    }
+    .banner__text{
+        @apply text-white mb-5;
+    }
+    .banner__text h1{
+        @apply text-[2rem] font-extrabold;
+    }
+    .banner__text p{
+        @apply text-[1.2rem];
+    }
+    .banner__actions{
+        @apply p-0  flex flex-col;
+    }
+    .banner__actions a{
+        @apply text-white text-[1.5rem] py-4 px-7 w-fit rounded-full my-2;
+    }
+    .banner__actions a i{
+        @apply mr-2;
+    }
+    .banner__actions a:first-child{
+        @apply bg-white text-black;
+    }
+    .banner__actions a:last-child{
+        @apply bg-[hsl(214.29,7.37%,18.63%)] ;
+    }
 }
