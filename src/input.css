@@ -84,10 +84,22 @@
 
     /* ---------------BANNER--------------- */
     .banner{
-        @apply bg-primary bg-[url(../dist/img/bg.svg)] bg-contain bg-no-repeat bg-[-5rem_bottom] h-[45rem] lg:bg-[url(../dist/img/bg.svg),url(../dist/img/bg2.svg),url(../dist/img/bg2.svg)];
+        @apply bg-primary;
+    }
+    .bg-img{
+        @apply relative h-[20rem] w-full max-w-[110rem] mx-auto flex justify-between items-center;
+    }
+    .img1{
+        @apply bg-[url(../dist/img/bg.svg)] bg-contain bg-no-repeat h-[20rem] w-full bg-[-12rem_bottom] z-20; 
+    }
+    .img2{
+        @apply bg-[url(../dist/img/star.svg)] bg-contain bg-no-repeat h-full w-full absolute bottom-0 left-[20%] z-10;
+    }
+    .img3{
+        @apply hidden bg-[url(../dist/img/bg2.svg)] bg-contain bg-no-repeat h-[20rem] w-full bg-[28rem_bottom] lg:block z-20;
     }
     .banner__text{
-        @apply text-white mb-5;
+        @apply text-white mb-5 lg:text-center;
     }
     .banner__text h1{
         @apply text-[2rem] font-extrabold;
@@ -96,7 +108,7 @@
         @apply text-[1.2rem];
     }
     .banner__actions{
-        @apply p-0  flex flex-col;
+        @apply p-0  flex flex-col lg:flex-row lg:gap-4 lg:justify-center;
     }
     .banner__actions a{
         @apply text-white text-[1.5rem] py-4 px-7 w-fit rounded-full my-2;

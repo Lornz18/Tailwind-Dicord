@@ -769,18 +769,58 @@ video {
 /* ---------------BANNER--------------- */
 
 .banner {
-  height: 45rem;
   --tw-bg-opacity: 1;
   background-color: hsl(235.14 82.78% 59.02% / var(--tw-bg-opacity));
+}
+
+.bg-img {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  height: 20rem;
+  width: 100%;
+  max-width: 110rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.img1 {
+  z-index: 20;
+  height: 20rem;
+  width: 100%;
   background-image: url(../dist/img/bg.svg);
   background-size: contain;
-  background-position: -5rem bottom;
+  background-position: -12rem bottom;
+  background-repeat: no-repeat;
+}
+
+.img2 {
+  position: absolute;
+  bottom: 0px;
+  left: 20%;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  background-image: url(../dist/img/star.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.img3 {
+  z-index: 20;
+  display: none;
+  height: 20rem;
+  width: 100%;
+  background-image: url(../dist/img/bg2.svg);
+  background-size: contain;
+  background-position: 28rem bottom;
   background-repeat: no-repeat;
 }
 
 @media (min-width: 1024px) {
-  .banner {
-    background-image: url(../dist/img/bg.svg),url(../dist/img/bg2.svg),url(../dist/img/bg2.svg);
+  .img3 {
+    display: block;
   }
 }
 
@@ -788,6 +828,12 @@ video {
   margin-bottom: 1.25rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  .banner__text {
+    text-align: center;
+  }
 }
 
 .banner__text h1 {
@@ -803,6 +849,14 @@ video {
   display: flex;
   flex-direction: column;
   padding: 0px;
+}
+
+@media (min-width: 1024px) {
+  .banner__actions {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
 }
 
 .banner__actions a {
