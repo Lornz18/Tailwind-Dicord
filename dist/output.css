@@ -769,20 +769,23 @@ video {
 /* ---------------BANNER--------------- */
 
 .banner {
+  position: relative;
+  height: 35rem;
   --tw-bg-opacity: 1;
   background-color: hsl(235.14 82.78% 59.02% / var(--tw-bg-opacity));
 }
 
 .bg-img {
-  position: relative;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   height: 20rem;
   width: 100%;
   max-width: 110rem;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .img1 {
@@ -822,6 +825,11 @@ video {
   .img3 {
     display: block;
   }
+
+  .banner__wrapper {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
 }
 
 .banner__text {
@@ -843,6 +851,14 @@ video {
 
 .banner__text p {
   font-size: 1.2rem;
+}
+
+@media (min-width: 1024px) {
+  .banner__text p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50rem;
+  }
 }
 
 .banner__actions {

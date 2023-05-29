@@ -84,10 +84,10 @@
 
     /* ---------------BANNER--------------- */
     .banner{
-        @apply bg-primary;
+        @apply bg-primary relative h-[35rem];
     }
     .bg-img{
-        @apply relative h-[20rem] w-full max-w-[110rem] mx-auto flex justify-between items-center;
+        @apply absolute h-[20rem] w-[100%] max-w-[110rem] mx-auto flex bottom-0 left-0 right-0;
     }
     .img1{
         @apply bg-[url(../dist/img/bg.svg)] bg-contain bg-no-repeat h-[20rem] w-full bg-[-12rem_bottom] z-20; 
@@ -98,6 +98,9 @@
     .img3{
         @apply hidden bg-[url(../dist/img/bg2.svg)] bg-contain bg-no-repeat h-[20rem] w-full bg-[28rem_bottom] lg:block z-20;
     }
+    .banner__wrapper{
+        @apply lg:my-[3rem];
+    }
     .banner__text{
         @apply text-white mb-5 lg:text-center;
     }
@@ -105,7 +108,7 @@
         @apply text-[2rem] font-extrabold;
     }
     .banner__text p{
-        @apply text-[1.2rem];
+        @apply text-[1.2rem] lg:w-[50rem] lg:mx-auto;
     }
     .banner__actions{
         @apply p-0  flex flex-col lg:flex-row lg:gap-4 lg:justify-center;
